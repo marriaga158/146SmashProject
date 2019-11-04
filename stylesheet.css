@@ -1,5 +1,9 @@
 /* this stylesheet is going to be the basic style */
 
+html {
+    background: aqua;
+}
+
 h1 {
     text-align: center;
 }
@@ -19,4 +23,15 @@ nav {
     justify-content: space-around;
     /* also need to change the text color to make it more readable */
     font-size: 20px;
+    /* this is also going to need to fold into a hamburger stack
+    once it gets small enough */
+}
+
+#moviePoster {
+    width: 90%;
+}
+
+#posterContainer {
+    display: flex;
+    align-items: center;
 }
