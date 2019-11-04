@@ -16,8 +16,13 @@ h1 {
 #wrapper {
     clear: both;
 }
+nav a:visited {
+    color: cyan;
+}
 
 nav {
+    border: 1px green solid;
+    color: cyan;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -25,6 +30,11 @@ nav {
     font-size: 20px;
     /* this is also going to need to fold into a hamburger stack
     once it gets small enough */
+}
+#posterContainer {
+    margin: auto;
+    width: 70%;
+    height: 50%;
 }
 
 #moviePoster {
@@ -34,4 +44,28 @@ nav {
 #posterContainer {
     display: flex;
     align-items: center;
+}
+
+#characters {
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#characters img {
+    width: 10%;
+    height: 10%;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#stages figure{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+#stages img {
+    display: inline-block;
 }
