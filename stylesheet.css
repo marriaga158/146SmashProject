@@ -1,0 +1,22 @@
+/* this stylesheet is going to be the basic style */
+
+h1 {
+    text-align: center;
+}
+
+#fullheader {
+    background-color: blue;
+    margin-top: 0;
+}
+
+#wrapper {
+    clear: both;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* also need to change the text color to make it more readable */
+    font-size: 20px;
+}
