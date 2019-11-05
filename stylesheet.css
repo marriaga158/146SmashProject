@@ -46,19 +46,14 @@ nav {
     once it gets small enough */
     padding: 10px;
 }
-#posterContainer {
-    margin: auto;
-    width: 70%;
-    height: 50%;
-}
 
 #moviePoster {
-    width: 90%;
+    
 }
 
 #posterContainer {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #characters {
