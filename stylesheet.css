@@ -2,6 +2,8 @@
 
 html {
     background: aqua;
+    /* someone change this color it's a terrible placeholder */
+    font-family: lato;
 }
 
 h1 {
@@ -30,6 +32,8 @@ nav {
     font-size: 20px;
     /* this is also going to need to fold into a hamburger stack
     once it gets small enough */
+    padding: 10px;
+    border: 3px solid black;
 }
 #posterContainer {
     margin: auto;
