@@ -33,6 +33,7 @@ nav {
     width: 100%;
     /* this is also going to need to fold into a hamburger stack
     once it gets small enough */
+    padding: 10px;
 }
 #posterContainer {
     margin: auto;
@@ -96,7 +97,6 @@ h2 {
 @media (max-width: 998px) { /* tablet size */
     body {
         margin: auto;
-        width: 70%;
     }
     #characters {
         text-align: center;
@@ -110,6 +110,12 @@ h2 {
     }
     #twitterContainer {
         text-align: center;
+    }
+    h1 {
+        font-size: 40px
+    }
+    nav {
+        font-size: 20px;
     }
 }
 
