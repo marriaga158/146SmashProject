@@ -83,6 +83,16 @@ h2 {
 #bottomSpacer{
     height: 200px;
 }
+
+#usefulLinks {
+    text-align: center;
+}
+
+#usefulLinks li {
+    display: inline-block;
+    font-size: 27px;
+}
+
 @media (max-width: 760px) {
     body {
         margin: auto;
