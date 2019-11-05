@@ -80,6 +80,9 @@ h2 {
     font-size: 30px;
 }
 
+#bottomSpacer{
+    height: 200px;
+}
 @media (max-width: 760px) {
     body {
         margin: auto;
