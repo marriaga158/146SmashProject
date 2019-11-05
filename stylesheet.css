@@ -38,6 +38,7 @@ nav {
 }
 
 #moviePoster {
+    margin: auto auto 30px auto;
     width: 90%;
 }
 
@@ -47,25 +48,37 @@ nav {
 }
 
 #characters {
-    margin-left: 2%;
     margin-top: 10px;
 }
 
-#characters img {
-    width: 10%;
-    height: 10%;
-}
 
 #copyright {
     text-align: center;
 }
 
-#stages figure{
-    display: inline-block;
-    width: 50%;
-    height: 50%;
+@media (max-width: 760px) {
+    body {
+        margin: auto;
+        width: 70%;
+    }
+    #characters {
+        text-align: center;
+    }
+    #characters img {
+        width: 50%;
+        height: 50%;
+    }
+    #stages details {
+        text-align: center;
+    }
+    #twitter {
+        text-align: center;
+    }
 }
 
-#stages img {
-    display: inline-block;
+@media (min-width: 760px) {
+    #stages figure{
+        display: inline-block;
+    }
+
 }
