@@ -115,3 +115,16 @@ li {
     text-align: center;
     padding-top: 50px;
 }
+
+@media screen and (max-width: 998px) {
+    /* tablet screens */
+    h1 {
+        font-size: 30px;
+    }
+    #moviePoster{
+        width: 700px;
+    }
+    #usefulLinks{
+        font-size: 30px;
+    }
+}
