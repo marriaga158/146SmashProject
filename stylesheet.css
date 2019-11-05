@@ -93,7 +93,7 @@ h2 {
     font-size: 27px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 998px) { /* tablet size */
     body {
         margin: auto;
         width: 70%;
@@ -113,7 +113,7 @@ h2 {
     }
 }
 
-@media (min-width: 760px) {
+@media (max-width: 399px) { /* phone size */
     #mainInfo {
         margin-left: 20px;
     }
@@ -131,4 +131,4 @@ h2 {
         text-align: center;
     }
 
-}
+} */
