@@ -1,29 +1,41 @@
 /* this stylesheet is going to be the basic style */
 
+
 html {
-    background: aqua;
+    background: #d9faff;
     /* someone change this color it's a terrible placeholder */
     font-family: lato;
+    margin: 0;
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
     text-align: center;
 }
 
 #fullheader {
     background-color: blue;
-    margin-top: 0;
+    margin: 0;
 }
 
 #wrapper {
     clear: both;
+    /* i don't really know what this does but i'm trying to get the top nav/title to fill the top */
 }
 nav a:visited {
     color: cyan;
 }
 
 nav {
-    border: 1px green solid;
+    /* border: 1px green solid; */
     color: cyan;
     display: flex;
     align-items: center;
@@ -33,7 +45,6 @@ nav {
     /* this is also going to need to fold into a hamburger stack
     once it gets small enough */
     padding: 10px;
-    border: 3px solid black;
 }
 #posterContainer {
     margin: auto;
@@ -72,4 +83,15 @@ nav {
 
 #stages img {
     display: inline-block;
+    width: 80%;
+}
+
+#twitterContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#usefulLinks {
+    font-size: 40px;
 }
