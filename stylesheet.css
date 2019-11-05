@@ -28,6 +28,7 @@ nav {
     justify-content: space-around;
     /* also need to change the text color to make it more readable */
     font-size: 20px;
+    width: 100%;
     /* this is also going to need to fold into a hamburger stack
     once it gets small enough */
 }
@@ -56,6 +57,10 @@ nav {
     text-align: center;
 }
 
+aside {
+    margin: auto;
+}
+
 @media (max-width: 760px) {
     body {
         margin: auto;
@@ -71,7 +76,7 @@ nav {
     #stages details {
         text-align: center;
     }
-    #twitter {
+    #twitterContainer {
         text-align: center;
     }
 }
@@ -79,6 +84,9 @@ nav {
 @media (min-width: 760px) {
     #stages figure{
         display: inline-block;
+    }
+    #twitterContainer {
+        text-align: center;
     }
 
 }
