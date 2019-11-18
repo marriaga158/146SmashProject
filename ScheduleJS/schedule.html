@@ -5,16 +5,41 @@
 <html>
     <head>
         <!-- <link rel="stylesheet" type="text/css" href="arriagaStylesheet.css"> -->
+        <script src="scheduleJS.js"></script>
     </head>
     <body>
         <h1>Schedule</h1>
-        <ul>
+        <!-- <ul>
             <li><u>CAL103</u> Writing and Communications</li>
             <li><u>MA123</u> Series, Vectors, Functions, and Surfaces</li>
             <li><u>CS115</u> Intro To Computer Science</li>
             <li><u>CS146</u> Intro to Web Design</li>
             <li><u>PEP111</u> Mechanics</li>
-        </ul>
+        </ul> -->
+        
+        <div id="colorElements" style="display: flex; flex-direction: column">
+            <div>
+                <input type="color" id="CAL103" name="CAL103" value="e66465">
+                <label for="head">CAL 103</label>
+            </div>
+            <div>
+                <input type="color" id="MA123" name="MA123" value="e66465">
+                <label for="head">MA 123</label>
+            </div>
+            <div>
+                <input type="color" id="CS115" name="CS115" value="e66465">
+                <label for="head">CS 115</label>
+            </div>
+            <div>
+                <input type="color" id="CS146" name="CS146" value="e66465">
+                <label for="head">CS 146</label>
+            </div>
+            <div>
+                <input type="color" id="PEP111" name="PEP111" value="e66465">
+                <label for="head">PEP 111</label>
+            </div>
+        </div>
+        
         <ul>
             <!-- rowspan="2" lets table elements span multiple rows -->
             <table border="1">
