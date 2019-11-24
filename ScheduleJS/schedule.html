@@ -20,27 +20,27 @@
         
         <div id="colorElements" style="display: flex; flex-direction: column">
             <div>
-                <input type="checkbox" name="class1" value="CAL103">
+                <input type="checkbox" name="class1" value="CAL103" onchange="toggle103(this);">
                 <input type="color" id="CAL103" name="CAL103" value="e66465">
                 <label for="head">CAL 103</label>
             </div>
             <div>
-                <input type="checkbox" name="class2" value="MA123">
+                <input type="checkbox" name="class2" value="MA123" onchange="checkFlip(this);">
                 <input type="color" id="MA123" name="MA123" value="e66465">
                 <label for="head">MA 123</label>
             </div>
             <div>
-                <input type="checkbox" name="class3" value="CS115">
+                <input type="checkbox" name="class3" value="CS115" onchange="checkFlip(this);">
                 <input type="color" id="CS115" name="CS115" value="e66465">
                 <label for="head">CS 115</label>
             </div>
             <div>
-                <input type="checkbox" name="class4" value="CS146">
+                <input type="checkbox" name="class4" value="CS146" onchange="checkFlip(this);">
                 <input type="color" id="CS146" name="CS146" value="e66465">
                 <label for="head">CS 146</label>
             </div>
             <div>
-                <input type="checkbox" name="class5" value="PEP111">
+                <input type="checkbox" name="class5" value="PEP111" onchange="checkFlip(this);">
                 <input type="color" id="PEP111" name="PEP111" value="e66465">
                 <label for="head">PEP 111</label>
             </div>
@@ -106,20 +106,23 @@
                     <!-- <td></td>-->
                 </tr>
                 <tr>
-                    <td>11 AM</td>
-                    <td rowspan="2">CAL103</td>
-                    <td></td>
-                    <td rowspan="2">CAL103</td>
-                    <td></td>
-                    <td rowspan="2">CAL103</td>
+                    <td class="103dest">11 AM</td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="103remove"></td>
+                    <td class="103dest"></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="103remove"></td>
+                    <td class="103dest"></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="103remove"></td>
                 </tr>
                 <tr>
                     <td>11:30 AM</td>
-                    <!-- <td></td> -->
+                    <td class="103remove"></td>
                     <td></td>
-                    <!-- <td></td>-->
+                    <td class="103remove"></td>
                     <td></td>
-                    <!-- <td></td>-->
+                    <td class="103remove"></td>
                 </tr>
                 <tr>
                     <td>12 PM</td>
@@ -140,7 +143,7 @@
                 <tr>
                     <td>1 PM</td>
                     <td></td>
-                    <!-- <td></td>-->
+                    <!-- <td></td> -->
                     <td></td>
                     <td></td>
                     <td></td>
