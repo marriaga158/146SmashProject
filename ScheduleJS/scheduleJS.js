@@ -21,7 +21,7 @@ function load(){
 function toggle103(elem){
     if (elem.checked){
         // alert("Im checked"); test code
-        // this needs to remove the 2 td elements and add one cal103
+        // this needs to remove the td elements and add one cal103
 
         $(".103remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
@@ -29,9 +29,9 @@ function toggle103(elem){
     }
     else{
         // alert("im not checked"); test code
-        // this needs to remove the cal103 and add 2 td elements
-        $(".103").remove();
-        $(".103dest").after('<td class="103remove"></td>');
+        // this needs to remove the cal103 and add td elements
+        $(".103").remove(); // removes 103
+        $(".103dest").after('<td class="103remove"></td>'); // adds the td elements
         $(".103remdest").after('<td class="103remove"></td>')
     }
 }
