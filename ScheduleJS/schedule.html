@@ -8,7 +8,7 @@
         <script src="scheduleJS.js"></script>
         <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     </head>
-    <body>
+    <body onload="load();">
         <h1>Schedule</h1>
         <!-- <ul>
             <li><u>CAL103</u> Writing and Communications</li>
@@ -20,7 +20,7 @@
         
         <div id="colorElements" style="display: flex; flex-direction: column">
             <div>
-                <input type="checkbox" name="class1" value="CAL103" onchange="toggle103(this);">
+                <input type="checkbox" name="class1" value="CAL103" onchange="toggle103(this);" checked="unchecked">
                 <input type="color" id="CAL103" name="CAL103" value="e66465">
                 <label for="head">CAL 103</label>
             </div>
@@ -117,11 +117,11 @@
                     <td class="103remove"></td>
                 </tr>
                 <tr>
-                    <td>11:30 AM</td>
+                    <td class="103remdest">11:30 AM</td>
                     <td class="103remove"></td>
-                    <td></td>
+                    <td class="103remdest"></td>
                     <td class="103remove"></td>
-                    <td></td>
+                    <td class="103remdest"></td>
                     <td class="103remove"></td>
                 </tr>
                 <tr>

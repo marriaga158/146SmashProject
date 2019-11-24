@@ -4,11 +4,18 @@ var checkbox115 = $("value=CS115");
 var checkbox146 = $("value=CS146");
 var checkbox111 = $("value=PEP111");
 
-/* var prefab103 = $('<td>', {
-    rowspan: 2,
-    class: '103',
-    text: 'CAL103'
-}) */
+function load(){
+    var checkboxes = document.getElementsByTagName('input');
+
+    // this takes all the checkboxes and unchecks them when the page is reloaded
+    for (var i=0; i<checkboxes.length; i++)  {
+        if (checkboxes[i].type == 'checkbox')   {
+          checkboxes[i].checked = false;
+        }
+    }
+
+    // alert('unchecked');
+}
 
 // so this function just runs whenever the checkboxes are checked/unchecked and runs the code accordingly
 function toggle103(elem){
@@ -24,5 +31,7 @@ function toggle103(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add 2 td elements
         $(".103").remove();
+        $(".103dest").after('<td class="103remove"></td>');
+        $(".103remdest").after('<td class="103remove"></td>')
     }
 }
