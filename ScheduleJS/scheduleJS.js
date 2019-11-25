@@ -4,6 +4,8 @@ var checkbox115 = $("value=CS115");
 var checkbox146 = $("value=CS146");
 var checkbox111 = $("value=PEP111");
 
+var colorPicker103;
+
 function load(){
     var checkboxes = document.getElementsByTagName('input');
 
@@ -13,6 +15,14 @@ function load(){
           checkboxes[i].checked = false;
         }
     }
+
+    // this controls the color picker for 103
+    colorPicker103 = document.getElementById('CAL103color');
+    colorPicker103.addEventListener("change", function(e){
+        var color = colorPicker103.value;
+        $(".103").css("background-color", color);
+    }, false);
+
 
     // alert('unchecked');
 }
@@ -35,3 +45,4 @@ function toggle103(elem){
         $(".103remdest").after('<td class="103remove"></td>')
     }
 }
+
