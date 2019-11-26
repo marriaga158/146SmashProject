@@ -58,8 +58,7 @@ function toggle103(elem){
     if (elem.checked){
         // alert("Im checked"); test code
         // this needs to remove the td elements and add one cal103
-
-        $(".103remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
+        $(".103remove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
         $(".103dest").after('<td rowspan="2" class="103">CAL103</td>'); // this adds the CAL103 element
     }
@@ -67,8 +66,9 @@ function toggle103(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add td elements
         $(".103").remove(); // removes 103
-        $(".103dest").after('<td class="103remove"></td>'); // adds the td elements
-        $(".103remdest").after('<td class="103remove"></td>')
+        //$(".103dest").after('<td class="103remove"></td>'); // adds the td elements
+        //$(".103remdest").after('<td class="103remove"></td>')
+        $(".103remove").css("display", "table-cell");
     }
 }
 
