@@ -77,7 +77,7 @@ function toggle123(elem){
         // alert("Im checked"); test code
         // this needs to remove the td elements and add one cal103
 
-        $(".123remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
+        $(".123remove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
         $(".123dest").after('<td rowspan="2" class="123">MA123</td>'); // this adds the CAL103 element
     }
@@ -85,8 +85,9 @@ function toggle123(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add td elements
         $(".123").remove(); // removes 103
-        $(".123dest").after('<td class="123remove"></td>'); // adds the td elements
-        $(".123remdest").after('<td class="123remove"></td>')
+        //$(".123dest").after('<td class="123remove"></td>'); // adds the td elements
+        //$(".123remdest").after('<td class="123remove"></td>')
+        $(".123remove").css("display", "table-cell");
     }
 }
 
@@ -95,7 +96,7 @@ function toggle115(elem){
         // alert("Im checked"); test code
         // this needs to remove the td elements and add one cal103
 
-        $(".115remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
+        $(".115remove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
         $(".115dest").after('<td rowspan="2" class="115">CS115</td>'); // this adds the CAL103 element
     }
@@ -103,8 +104,9 @@ function toggle115(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add td elements
         $(".115").remove(); // removes 103
-        $(".115dest").after('<td class="115remove"></td>'); // adds the td elements
-        $(".115remdest").after('<td class="115remove"></td>')
+        //$(".115dest").after('<td class="115remove"></td>'); // adds the td elements
+        //$(".115remdest").after('<td class="115remove"></td>')
+        $(".115remove").css("display", "table-cell")
     }
 }
 
@@ -113,7 +115,7 @@ function toggle146(elem){
         // alert("Im checked"); test code
         // this needs to remove the td elements and add one cal103
 
-        $(".146remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
+        $(".146remove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
         $(".146dest").after('<td rowspan="2" class="146">CS146</td>'); // this adds the CAL103 element
     }
@@ -121,8 +123,9 @@ function toggle146(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add td elements
         $(".146").remove(); // removes 103
-        $(".146dest").after('<td class="146remove"></td>'); // adds the td elements
-        $(".146remdest").after('<td class="146remove"></td>')
+        //$(".146dest").after('<td class="146remove"></td>'); // adds the td elements
+        //$(".146remdest").after('<td class="146remove"></td>')
+        $(".146remove").css("display", "table-cell");
     }
 }
 
@@ -131,7 +134,7 @@ function toggle111(elem){
         // alert("Im checked"); test code
         // this needs to remove the td elements and add one cal103
 
-        $(".111remove").remove(); // this removes all of the <td> elements that need to be cleared for 103
+        $(".111remove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
         // prefab103.appendTo($(".103dest"));
         $(".111dest").after('<td rowspan="2" class="111">PEP111</td>'); // this adds the CAL103 element
     }
@@ -139,8 +142,9 @@ function toggle111(elem){
         // alert("im not checked"); test code
         // this needs to remove the cal103 and add td elements
         $(".111").remove(); // removes 103
-        $(".111dest").after('<td class="111remove"></td>'); // adds the td elements
-        $(".111remdest").after('<td class="111remove"></td>')
+        //$(".111dest").after('<td class="111remove"></td>'); // adds the td elements
+        //$(".111remdest").after('<td class="111remove"></td>')
+        $(".111remove").css('display', "table-cell")
     }
 }
 
