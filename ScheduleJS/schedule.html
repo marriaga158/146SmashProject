@@ -25,22 +25,22 @@
                 <label for="head">CAL 103</label>
             </div>
             <div>
-                <input type="checkbox" name="class2" value="MA123" onchange="checkFlip(this);">
+                <input type="checkbox" name="class2" value="MA123" onchange="toggle123(this);" checked="unchecked">
                 <input type="color" id="MA123color" name="MA123" value="#ffffff">
                 <label for="head">MA 123</label>
             </div>
             <div>
-                <input type="checkbox" name="class3" value="CS115" onchange="checkFlip(this);">
+                <input type="checkbox" name="class3" value="CS115" onchange="toggle115(this);" checked="unchecked">
                 <input type="color" id="CS115color" name="CS115" value="#ffffff">
                 <label for="head">CS 115</label>
             </div>
             <div>
-                <input type="checkbox" name="class4" value="CS146" onchange="checkFlip(this);">
+                <input type="checkbox" name="class4" value="CS146" onchange="toggle146(this);" checked="unchecked">
                 <input type="color" id="CS146color" name="CS146" value="#ffffff">
                 <label for="head">CS 146</label>
             </div>
             <div>
-                <input type="checkbox" name="class5" value="PEP111" onchange="checkFlip(this);">
+                <input type="checkbox" name="class5" value="PEP111" onchange="toggle111(this);" checked="unchecked">
                 <input type="color" id="PEP111color" name="PEP111" value="#ffffff">
                 <label for="head">PEP 111</label>
             </div>
@@ -74,37 +74,48 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>9 AM</td>
-                    <td rowspan="2">PEP111</td>
+                    <td class="111dest">9:30 AM</td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="111remove"></td>
                     <td></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
                     <td></td>
-                    <td></td>
-                    <td rowspan="2">PEP111</td>
+                    <td class="111dest"></td>
+                    <td class="111remove"></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->  
                 </tr>
+
                 <tr>
                     <td>9:30 AM</td>
-                    <!-- <td></td> -->
-                    <td rowspan="2">MA123</td>
+                    <td class="123dest"></td>
+                    <td class="123remove 111remove"></td>
+                    <td class="123dest"></td>
+                    <td class="123remove"></td>
+                    <td class="123remove 111remdest"></td>
+                    
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->  
+                </tr>
+
+                <tr>
+                    <!-- remdest is a destination class for where the removed <td>s get put back -->
+                    <td class="123remdest">10 AM</td>
+
                     <td></td>
-                    <td rowspan="2">MA123</td>
-                    <!-- <td></td>-->
+                    <td class="123remove"></td>
+                    <td class="123remdest"></td>
+                    <td class="123remove"></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>10 AM</td>
-                    <td rowspan="2">CS115</td>
-                    <!-- <td></td> -->
-                    <td rowspan="2">CS115</td>
-                    <!-- <td></td>-->
-                    <td rowspan="2">CS115</td>
+                    <!-- remdest is a destination class for where the removed <td>s get put back -->
+                    <td class="115remdest">11:30 AM</td>
+                    <td class="115remove"></td>
+                    <td class="115remdest"></td>
+                    <td class="115remove"></td>
+                    <td class="115remdest"></td>
+                    <td class="115remove"></td>
                 </tr>
-                <tr>
-                    <td>10:30 AM</td>
-                    <!-- <td></td> -->
-                    <td></td>
-                    <!-- <td></td>-->
-                    <td></td>
-                    <!-- <td></td>-->
-                </tr>
+
                 <tr>
                     <td class="103dest">11 AM</td>
                     <!-- <td rowspan="2" class="103">CAL103</td> -->
@@ -116,6 +127,7 @@
                     <!-- <td rowspan="2" class="103">CAL103</td> -->
                     <td class="103remove"></td>
                 </tr>
+
                 <tr>
                     <!-- remdest is a destination class for where the removed <td>s get put back -->
                     <td class="103remdest">11:30 AM</td>
@@ -157,6 +169,7 @@
                     <td></td>
                     <td></td>
                 </tr>
+                
                 <tr>
                     <td>2 PM</td>
                     <td rowspan="2">MA123</td>
@@ -181,22 +194,32 @@
                     <td></td>
                     <td></td>
                 </tr>
+                
                 <tr>
                     <td>3:30 PM</td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="146dest"></td>
+                    <td class="146dest"></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    <td class="146remove"></td>
+                    <td class="146remove"></td>
+                    
                     <td></td>
-                    <td rowspan="2">CS146</td>
-                    <td></td>
-                    <td rowspan="2">CS146</td>
-                    <td></td>
+                    <!-- <td rowspan="2" class="103">CAL103</td> -->
+                    
                 </tr>
+
                 <tr>
-                    <td>4 PM</td>
+                    <!-- remdest is a destination class for where the removed <td>s get put back -->
+                    <td class="146remdest">4:00 PM</td>
+
                     <td></td>
-                    <!-- <td></td>-->
-                    <td></td>
-                    <!-- <td></td>-->
+                    <td class="146remove"></td>
+                    <td class="146remdest"></td>
+                    <td class="146remove"></td>
                     <td></td>
                 </tr>
+
                 <tr>
                     <td>4:30 PM</td>
                     <td></td>
@@ -205,6 +228,7 @@
                     <td></td>
                     <td></td>
                 </tr>
+
                 <tr>
                     <td>5 PM</td>
                     <td></td>
