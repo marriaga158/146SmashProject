@@ -4,11 +4,13 @@ var checkbox115 = $("value=CS115");
 var checkbox146 = $("value=CS146");
 var checkbox111 = $("value=PEP111");
 
+
 var colorPicker103;
 var colorPicker123;
 var colorPicker115;
 var colorPicker146;
 var colorPicker111;
+
 
 function load(){
     var checkboxes = document.getElementsByTagName('input');
@@ -37,6 +39,7 @@ function load(){
     colorPicker115.addEventListener("change", function(e){
         var color = colorPicker115.value;
         $(".115").css("background-color", color);
+        $(".115Rec").css("background-color", color);
     }, false);
 
     colorPicker146 = document.getElementById('CS146color');
@@ -49,8 +52,12 @@ function load(){
     colorPicker111.addEventListener("change", function(e){
         var color = colorPicker111.value;
         $(".111").css("background-color", color);
+        $(".111Rec").css("background-color", color);
     }, false);
     // alert('unchecked');
+
+    
+
 }
 
 // so this function just runs whenever the checkboxes are checked/unchecked and runs the code accordingly
@@ -145,6 +152,44 @@ function toggle111(elem){
         //$(".111dest").after('<td class="111remove"></td>'); // adds the td elements
         //$(".111remdest").after('<td class="111remove"></td>')
         $(".111remove").css('display', "table-cell")
+    }
+}
+
+function toggle111Rec(elem){
+    if (elem.checked){
+        // alert("Im checked"); test code
+        // this needs to remove the td elements and add one cal103
+
+        $(".111Recremove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
+        // prefab103.appendTo($(".103dest"));
+        $(".111Recdest").after('<td rowspan="4" class="111Rec">PEP111</td>'); // this adds the CAL103 element
+    }
+    else{
+        // alert("im not checked"); test code
+        // this needs to remove the cal103 and add td elements
+        $(".111Rec").remove(); // removes 103
+        //$(".111dest").after('<td class="111remove"></td>'); // adds the td elements
+        //$(".111remdest").after('<td class="111remove"></td>')
+        $(".111Recremove").css('display', "table-cell")
+    }
+}
+
+function toggle115Rec(elem){
+    if (elem.checked){
+        // alert("Im checked"); test code
+        // this needs to remove the td elements and add one cal103
+
+        $(".115Recremove").css("display", "none"); // this removes all of the <td> elements that need to be cleared for 103
+        // prefab103.appendTo($(".103dest"));
+        $(".115Recdest").after('<td rowspan="4" class="115Rec">CS115</td>'); // this adds the CAL103 element
+    }
+    else{
+        // alert("im not checked"); test code
+        // this needs to remove the cal103 and add td elements
+        $(".115Rec").remove(); // removes 103
+        //$(".111dest").after('<td class="111remove"></td>'); // adds the td elements
+        //$(".111remdest").after('<td class="111remove"></td>')
+        $(".115Recremove").css('display', "table-cell")
     }
 }
 

@@ -30,7 +30,7 @@
                 <label for="head">MA 123</label>
             </div>
             <div>
-                <input type="checkbox" name="class3" value="CS115" onchange="toggle115(this);" checked="unchecked">
+                <input type="checkbox" name="class3" value="CS115" onchange="toggle115(this); toggle115Rec(this)" checked="unchecked">
                 <input type="color" id="CS115color" name="CS115" value="#ffffff">
                 <label for="head">CS 115</label>
             </div>
@@ -40,7 +40,7 @@
                 <label for="head">CS 146</label>
             </div>
             <div>
-                <input type="checkbox" name="class5" value="PEP111" onchange="toggle111(this);" checked="unchecked">
+                <input type="checkbox" name="class5" value="PEP111" onchange="toggle111(this); toggle111Rec(this);" checked="unchecked">
                 <input type="color" id="PEP111color" name="PEP111" value="#ffffff">
                 <label for="head">PEP 111</label>
             </div>
@@ -147,8 +147,8 @@
                 </tr>
                 <tr>
                     <td>12:30 PM</td>
-                    <td></td>
-                    <td rowspan="4">PEP111</td>
+                    <td class="111Recdest"></td>
+                    <td class="111Recremove"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -156,6 +156,7 @@
                 <tr>
                     <td>1 PM</td>
                     <td></td>
+                    <td class="111Recremove"></td>
                     <!-- <td></td> -->
                     <td></td>
                     <td></td>
@@ -163,6 +164,7 @@
                 </tr>
                 <tr>
                     <td>1:30 PM</td>
+                    <td class="111Recremove"></td>
                     <td></td>
                     <!-- <td></td>-->
                     <td></td>
@@ -172,6 +174,7 @@
                 
                 <tr>
                     <td>2 PM</td>
+                    <td class="111Recremove"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -256,21 +259,23 @@
                 <tr>
                     <td>6:30 PM</td>
                     <td></td>
-                    <td></td>
-                    <td rowspan="4">CS115</td>
+                    <td class="115Recdest"></td>
+                    <td class="115Recremove"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>7 PM</td>
-                    <td></td>
+                    <td class="115Recremove"></td>
                     <td></td>
                     <!-- <td></td>-->
+                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>7:30 PM</td>
+                    <td class="115Recremove"></td>
                     <td></td>
                     <td></td>
                     <!-- <td></td>-->
@@ -279,6 +284,7 @@
                 </tr>
                 <tr>
                     <td>8 PM</td>
+                    <td class="115Recremove"></td>
                     <td></td>
                     <td></td>
                     <!-- <td></td>-->
