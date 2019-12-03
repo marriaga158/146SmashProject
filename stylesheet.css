@@ -114,6 +114,8 @@ h2 {
     margin-left: 60px;
 }
 
+
+
 @media screen and (max-width: 998px) { /* tablet size */
     body {
         margin: auto;
@@ -193,3 +195,17 @@ h2 {
     }
 } 
     
+
+
+
+
+
+ul {
+    width: 80%;
+    margin: auto;
+}
+
+#rulesetContainer {
+    width: 60%;
+    margin: auto;
+}
