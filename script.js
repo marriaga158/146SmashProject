@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $('div.hidden').fadeIn(1000);
+});
+
 function redTheme(elem){
     if (elem.checked){
         // alert("Im checked"); test code
