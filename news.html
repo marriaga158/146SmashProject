@@ -4,7 +4,9 @@
     <head>
         <title>Super Smash Bros.</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     </head>
     <body>
         <div id="fullheader">
@@ -17,7 +19,26 @@
           </div>
         </div>
         <!-- This code is auto-generated with Twitter's embed webtool -->
-
+        
+        <h3>Change color theme</h3>
+         <div id="colorElements">
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="redTheme" onchange="redTheme(this);">
+                <label for="head">Mario</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="blueTheme" onchange="blueTheme(this);">
+                <label for="head">Marth</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="greenTheme" onchange="greenTheme(this)">
+                <label for="head">Yoshi</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="pinkTheme" onchange="pinkTheme(this);">
+                <label for="head">Peach</label>
+            </div>
+        </div>
 
         <div id="twitterContainer">
 

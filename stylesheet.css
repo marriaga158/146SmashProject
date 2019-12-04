@@ -42,6 +42,12 @@ nav {
     once it gets small enough */
     padding: 10px;
 }
+
+#colorElements {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
 #posterContainer {
     margin: auto;
     width: 70%;

@@ -5,6 +5,8 @@
         <title>Super Smash Bros.</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     </head>
     <body>
         <div id="fullheader">
@@ -16,6 +18,27 @@
             </nav>
           </div>
         </div>
+
+        <h3>Change color theme</h3>
+         <div id="colorElements">
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="redTheme" onchange="redTheme(this);">
+                <label for="head">Mario</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="blueTheme" onchange="blueTheme(this);">
+                <label for="head">Marth</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="greenTheme" onchange="greenTheme(this)">
+                <label for="head">Yoshi</label>
+            </div>
+            <div>
+                <input type="radio" class="colorTheme" name="colorTheme" value="pinkTheme" onchange="pinkTheme(this);">
+                <label for="head">Peach</label>
+            </div>
+        </div>
+
         <div id="discordLinkWrapper">
             <a href="https://discord.gg/HgakcD6" id="discordLink">Join the C2GS Discord to stay up-to-date with SSBU at Stevens</a>
         </div>
