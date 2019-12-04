@@ -6,6 +6,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="lightbox.css">
+        <script src="lightbox-plus-jquery.js"></script>
 
     </head>
     <body>
@@ -47,8 +49,10 @@
 
             
         <h2>Home</h2>
+        <div id="container">
         <div id="posterContainer">
-            <img src="images/moviePoster.jpg" id="moviePoster"/>
+            
+            <a href="images/moviePoster.jpg" data-lightbox="set"><img src="images/moviePoster.jpg" id="moviePoster"/></a>
         </div>
         <!-- <img src="images/cover.jpg" id="cover"/> -->
         </section>
@@ -65,6 +69,7 @@
                 <p>Copyright &copy; 2019</p>
             </div>
         </footer>
+        </div>
 
     </body>
 </html>
