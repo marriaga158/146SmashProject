@@ -55,13 +55,16 @@ nav {
 }
 
 #moviePoster {
-    margin: auto auto 30px auto;
-    width: 90%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 #posterContainer {
     display: flex;
     align-items: center;
+    width: 70%;
+    margin-bottom: 30px;
 }
 
 #characters {
