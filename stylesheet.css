@@ -114,6 +114,7 @@ h2 {
 
 #characters img{
     width: 400px;
+    height: 300px;
 }
 
 #characters details{
@@ -123,7 +124,7 @@ h2 {
 
 
 
-@media screen and (min-width: 481px) and (max-width:768px){ /* tablet size */
+@media screen and  (max-width:998px){ /* tablet size */
     body {
         margin: auto;
     }
@@ -131,8 +132,8 @@ h2 {
         text-align: center;
     }
     #characters img {
-        width: 50%;
-        height: 50%;
+        width: 30%;
+        height: 30%;
     }
     #stages details {
         text-align: center;
@@ -154,17 +155,18 @@ h2 {
         font-size: 25px;
     }
     #characters summary{
-        font-size: 15px;
+        font-size: 20px;
     }
+    
 }
 
-@media screen and (max-width: 480px) { /* phone size */
+@media screen and (max-width: 499px) { /* phone size */
     #mainInfo {
         margin-left: 20px;
     }
     #characters img {
-        width: 35%;
-        height: 25%;
+        width: 20%;
+        height: 20%;
     }
 
     #stages figure{
@@ -176,6 +178,8 @@ h2 {
     }
     h1{
         font-size: 30px;
+        font-size: 15px;
+        padding: 5px;
     }
     nav{
         font-size: 15px;
@@ -199,7 +203,7 @@ h2 {
     }
     #characters details {
         justify-content: center;
-        margin: 10px
+        margin: 20px
     }
 
 } 
@@ -211,8 +215,8 @@ h2 {
         font-size: 50px;
     }
     #characters img {
-        width: 30%;
-        height: 30%;
+        width: 35%;
+        height: 35%;
     }
     #characters{
         margin-left: 50px;
@@ -224,10 +228,14 @@ h2 {
 
     }
     #characters h2{
-        font-size: 50px;
+        font-size: 35px;
     }
    #characters summary{
-       font-size: 35px;
+       font-size: 30px;
+   }
+   #stages figure{
+    display: inline-block;
+    width: 70%;
    }
    
 } 
